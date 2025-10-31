@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>CSS Responsive Styling</title>
+<style>
+.main-head {
+			background-color: crimson;
+			font-size: 30px;
+			max-width: 500px;
+			padding: 30px;
+		}
+
+  /*List css*/
+ul {
+list-style-image: url("Assests/icon.png");
+background: pink;
+padding: 10px;
+}
+
+ul li {
+  background: beige;
+  /*padding: 3px;
+  margin-left: 25px;*/
+  margin: 5px;
+}
+
+a.button:link, a.button:visited {
+  background-color: white;
+  color: black;
+  border: 2px solid green;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 25px;
+}
+
+a.button:hover, a.button:active {
+  background-color:green;
+  color:white;
+}
+
+div.cards {
+  width: 50%;
+  background-color: antiquewhite;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px;
+}
+
+div.caption {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+img.thumb {
+  border: 1px solid lightblue;
+  border-radius: 5px;
+  padding: 5px;
+  width: 150px;
+}
+
+img.thumb:hover {
+  box-shadow: 0 0 15px 1px rgba(0, 140, 186, 0.5);
+}
+
+.breakpoints {
+  padding: 20px;
+  color: cadetblue;
+}
+
+/*smallest screen size*/
+@media only screen and (max-width: 600px) {
+  .breakpoints { background-color: green;}
+}
+
+/*small screen*/
+@media only screen and (min-width: 600px) {
+  .breakpoints { background-color: gold;}
+}
+
+/*medium screen sizes*/
+@media only screen and (min-width: 768px) {
+  .breakpoints { background-color: antiquewhite;}
+}
+
+/*large screen sizes*/
+@media only screen and (min-width: 992px) {
+  .breakpoints { background-color: pink;}
+}
+
+/*extra large screen sizes*/
+@media only screen and (min-width: 1200px) {
+  .breakpoints { background-color: orange;}
+}
+
+</style>
+</head>
+<body>
+
+<h2>Mediaquery Breakpoints</h2>
+<p class = "breakpoints"> Breakpoints will help in creating a very responsive and adaptable webpage acoording to different screen sizes!</p>
+
+<!--/*List css*/ -->
+<h2 class = "main-head">Responsive WebPage using CSS</h2>
+<p>The list-style-image property specifies an image as the list item marker:</p>
+<h3>Parts of trees:</h3>
+<ul> 
+  <li>Leaf</li>
+  <li>Branch</li>
+  <li>Bark</li>
+  <li>Trunk</li>
+  <li>Roots</li>
+  <li>Crown</li>
+</ul>
+
+<a class = "button" href = "CSSResponsive.html" target = "_blank">Link to Tables using CSS! </a>
+
+<h2>Polaroid Images/Cards</h2>
+<div class = "cards">
+  <img src = "Assests/northern-lights.jpeg" alt = "Northern Lights" style = "width: 100%;">
+  <div class = "caption">
+    <p>Northern Lights</p>
+  </div>
+</div>  
+
+
+<div class = "cards">
+  <img src = "Assests/pink-flower-bush.jpeg" alt = "Cherry Blossom Bush" style = "width: 100%;">
+  <div class = "caption">
+    <p>Cherry Blossom Bush</p>
+  </div>
+</div>  
+
+<a href = "tableswithCSS.html" target = "_blank">
+<img src = "Assests/Moonlight.JPeG" class = "thumb" alt = "Moonlight" style = "width:150px;">
+</a>
+
+
+</body>
+</html>
